@@ -3,12 +3,16 @@
 
 <head>
 	<meta charset="UTF-8">
-	<title>ホーム</title>
+	<title>[[${title}]]</title>
 	<link rel="stylesheet" th:href="@{/css/style.css}">
 </head>
 
 <body>
-	<h1 th:text="${message}"></h1>
+	<h1>[[${title}]]</h1>
+	<p><a th:href="@{/item}">商品一覧</a></p>
+	<footer>
+		<p><small>&copy; ABC Inc. All Rights Reserved.</small></p>
+	</footer>
 </body>
 
 </html>
